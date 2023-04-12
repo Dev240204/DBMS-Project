@@ -11,8 +11,8 @@ con.connect((err) => {
     //     )`, (err, result) => {
     //     if (err) throw err;
     // })
-    // const sql = `select * from brands`;
     // if (err) throw err;
+    // const sql = `select * from brands`;
     // con.query(sql, (err, result) => {
     //     if (err) throw err;
     //     console.log(result);
@@ -20,6 +20,13 @@ con.connect((err) => {
 })
 app.get("/", (req, res) => {
     res.send("Hello World")
+})
+app.get("/users",(req,res)=>{
+    const sql = `select * from brands`;
+    con.query(sql, (err, result) => {
+        if (err) throw err;
+        res.send(result);
+    })
 })
 app.listen(3000, () => {
     console.log("Server started on port 3000")
