@@ -1,31 +1,66 @@
 const express = require("express")
-const app = express()
+const path = require("path");
+const ejsMate = require("ejs-mate");
 const con = require("./connector.js")
+const app = express()
 
-con.connect((err) => {
-    // const sql = `desc brands`;
-    // con.query(`CREATE TABLE brands (
-    //     id INT PRIMARY KEY,
-    //     name VARCHAR(50) NOT NULL,
-    //     description TEXT
-    //     )`, (err, result) => {
-    //     if (err) throw err;
-    // })
-    // if (err) throw err;
-    // const sql = `select * from brands`;
-    // con.query(sql, (err, result) => {
-    //     if (err) throw err;
-    //     console.log(result);
-    // })
-})
+// Ejs and Ejs-Mate Setup for Templating
+app.engine("ejs", ejsMate);
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 app.get("/", (req, res) => {
-    res.send("Hello World")
+    const sql = `select * from products`;
+    con.query(sql,(err,result)=>{
+        if(err) throw err;
+        res.render("home",{result})
+    })
 })
-app.get("/users",(req,res)=>{
-    const sql = `select * from brands`;
+app.get("/men",(req,res)=>{
+    const sql = `select * from men`;
+    const sql1 = `select category_id from men`
+    let category = 0
+    con.query(sql1,(err,result)=>{
+        if (err) throw err;
+        category = result[0]
+    })
     con.query(sql, (err, result) => {
         if (err) throw err;
-        res.send(result);
+        res.render("category",{data : result,category});
+    })
+})
+app.get("/women",(req,res)=>{
+    const sql = `select * from women`;
+    const sql1 = `select category_id from women`
+    let category = 0
+    con.query(sql1,(err,result)=>{
+        if (err) throw err;
+        category = result[0]
+    })
+    con.query(sql, (err, result) => {
+        if (err) throw err;
+        res.render("category",{data : result,category});
+    })
+})
+app.get("/kids",(req,res)=>{
+    const sql = `select * from kids`;
+    const sql1 = `select category_id from kids`
+    let category = 0
+    con.query(sql1,(err,result)=>{
+        if (err) throw err;
+        category = result[0]
+    })
+    con.query(sql, (err, result) => {
+        if (err) throw err;
+        res.render("category",{data : result,category});
+    })
+})
+app.get("/product/:id",(req,res)=>{
+    const {id} = req.params
+    const sql = `select * from products`
+    con.query(sql,(err,result)=>{
+        if(err) throw err;
+        res.render("product",{result})
     })
 })
 app.listen(3000, () => {
