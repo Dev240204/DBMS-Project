@@ -19,9 +19,19 @@ use clothstore;
 --   description TEXT,
 --   brand VARCHAR(50),
 --   size VARCHAR(20),
---   color VARCHAR(20)
+--   color VARCHAR(20),
+--   image_url VARCHAR(255) NOT NULL
 -- );
 -- desc products;
+
+--  create table image (
+--  id int not null primary key auto_increment,
+--  product_id int,
+--  foreign key(product_id) references products(id),
+--  url varchar(500)
+--  );
+--  desc image;
+
 -- CREATE TABLE men (
 --   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 --   product_id INT NOT NULL,
@@ -33,7 +43,8 @@ use clothstore;
 --   description TEXT,
 --   brand VARCHAR(50),
 --   size VARCHAR(20),
---   color VARCHAR(20)
+--   color VARCHAR(20),
+--   image_url VARCHAR(255) NOT NULL
 -- );
 -- desc men;
 -- CREATE TABLE women (
@@ -47,7 +58,8 @@ use clothstore;
 --   description TEXT,
 --   brand VARCHAR(50),
 --   size VARCHAR(20),
---   color VARCHAR(20)
+--   color VARCHAR(20),
+--   image_url VARCHAR(255) NOT NULL
 -- );
 -- desc women;
 -- CREATE TABLE kids (
@@ -61,7 +73,8 @@ use clothstore;
 --   description TEXT,
 --   brand VARCHAR(50),
 --   size VARCHAR(20),
---   color VARCHAR(20)
+--   color VARCHAR(20),
+--   image_url VARCHAR(255) NOT NULL
 -- );
 -- desc kids;
 
@@ -107,23 +120,68 @@ use clothstore;
 -- ('Kids'' Sneakers', 24.99, 3, 'Durable and comfortable sneakers for kids', 'New Balance', '10', 'Grey/Pink');
 -- select * from products;
 
+--  insert into image(id, product_id, url) values
+--  (1, 1, "https://unsplash.com/photos/KrHNHoRLwmw"),
+--  (2, 2, "https://unsplash.com/photos/f67Caxg3akg"),
+--  (3, 3, "https://unsplash.com/photos/ZCoqcrWp9GY"),
+--  (4, 4, "https://unsplash.com/photos/0QDEj5dnUMk"),
+--  (5, 5, "https://unsplash.com/photos/SD9Jyl1xNQ4"),
+--  (6, 6, "https://unsplash.com/photos/TPC-Tx8dcNE"),
+--  (7, 7, "https://unsplash.com/photos/XG-fPA4Nu6k"),
+--  (8, 8, "https://unsplash.com/photos/na8l3EPqpvY"),
+--  (9, 9, "https://unsplash.com/photos/4rnfKwSNpx0"),
+--  (10, 10, "https://unsplash.com/photos/cMB3D5Ox5KE"),
+--  (11, 11, "https://unsplash.com/photos/Ue5kuMVmIhU"),
+--  (12, 12, "https://unsplash.com/photos/5pmpSRctZb0"),
+--  (13, 13, "https://unsplash.com/photos/2s3GhhJz2uY"),
+--  (14, 14, "https://unsplash.com/photos/ah3jM7nRh1Y"),
+--  (15, 15, "https://unsplash.com/photos/lVCHfXn3VME"),
+--  (16, 16, "https://unsplash.com/photos/KUK-Z5aHjbg"),
+--  (17, 17, "https://unsplash.com/photos/ld8Thc2ryuQ"),
+--  (18, 18, "https://unsplash.com/photos/Z1JgfuSQ80s"),
+--  (19, 19, "https://unsplash.com/photos/JZ51o_-UOY8"),
+--  (20, 20, "https://unsplash.com/photos/gGdV5gn1eYc"),
+--  (21, 21, "https://unsplash.com/photos/7km_eNGl_qA"),
+--  (22, 22, "https://unsplash.com/photos/Fg15LdqpWrs"),
+--  (23, 23, "https://unsplash.com/photos/48-R71Sd_d8"),
+--  (24, 24, "https://unsplash.com/photos/umfpFoKxIVg"),
+--  (25, 25, "https://unsplash.com/photos/AmORQArz3Ds"),
+--  (26, 26, "https://unsplash.com/photos/YHbcum51JB0"),
+--  (27, 27, "https://unsplash.com/photos/cMB3D5Ox5KE"),
+--  (28, 28, "https://unsplash.com/photos/2s3GhhJz2uY"),
+--  (29, 29, "https://unsplash.com/photos/cCKmXQT_lvI"),
+--  (30, 30, "https://unsplash.com/photos/m6mAYVEHlNs"),
+--  (31, 31, "https://unsplash.com/photos/zYEXRpfJfII"),
+--  (32, 32, "https://unsplash.com/photos/GOR2kYIPT6E"),
+--  (33, 33, "https://unsplash.com/photos/35yy-0cwIMw"),
+--  (34, 34, "https://unsplash.com/photos/W82dYwtQrTk"),
+--  (35, 35, "https://unsplash.com/photos/DWXoedwYhl0"),
+--  (36, 36, "https://unsplash.com/photos/R3mCPKxN_wo"),
+--  (37, 37, "https://unsplash.com/photos/Z1JgfuSQ80s");
+--  select * from image;
+
+# Joined Image and Product Table and inserted the url data in product table
+-- UPDATE products p
+-- LEFT JOIN image i ON p.id = i.product_id
+-- SET p.image_url = i.url;
+
 # Adding data in men table using product table
--- INSERT INTO men (product_id,category_id,name, price, description, brand, size, color)
--- SELECT id,category_id,name, price, description, brand, size, color
+-- INSERT INTO men (product_id,category_id,name, price, description, brand, size, color,image_url)
+-- SELECT id,category_id,name, price, description, brand, size, color,image_url
 -- FROM products
 -- WHERE category_id = 1;
 -- select * from men
 
  # Adding data in women table using product table
--- INSERT INTO women (product_id,category_id,name, price, description, brand, size, color)
--- SELECT id,category_id,name, price, description, brand, size, color
+-- INSERT INTO women (product_id,category_id,name, price, description, brand, size, color,image_url)
+-- SELECT id,category_id,name, price, description, brand, size, color,image_url
 -- FROM products
 -- WHERE category_id = 2;
 -- select * from women
 
 # Adding data in Kids table using product table
--- INSERT INTO kids (product_id,category_id,name, price, description, brand, size, color)
--- SELECT id,category_id,name, price, description, brand, size, color
+-- INSERT INTO kids (product_id,category_id,name, price, description, brand, size, color,image_url)
+-- SELECT id,category_id,name, price, description, brand, size, color,image_url
 -- FROM products
 -- WHERE category_id = 3;
 -- select * from kids;
