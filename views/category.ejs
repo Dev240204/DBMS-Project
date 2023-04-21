@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category</title>
 </head>
+
 <body>
-    <% if (category.category_id === 1) { %>
+    <% if (category.category_id===1) { %>
         <h1>Men's Products</h1>
         <ul>
             <% data.forEach((row)=>{ %>
-                <li><%= row.name %></li>
+                <li>
+                    <%= row.name %>
+                        <div>
+                            <%= row.description %>
+                        </div>
+                        <img src="<%= row.image_url %>" alt="" style="width: 100px;">
+                </li>
                 <% }) %>
-            </ul>
-    <% } %>
-    <% if (category.category_id === 2) { %>
-        <h1>Women's Products</h1>
-        <ul>
-            <% data.forEach((row)=>{ %>
-                <li><%= row.name %></li>
-                <% }) %>
-            </ul>
-    <% } %>
-    <% if (category.category_id === 3) { %>
-        <h1>Kid's Products</h1>
-        <ul>
-            <% data.forEach((row)=>{ %>
-                <li><%= row.name %></li>
-                <% }) %>
-            </ul>
-    <% } %>
+        </ul>
+        <% } %>
+            <% if (category.category_id===2) { %>
+                <h1>Women's Products</h1>
+                <ul>
+                    <% data.forEach((row)=>{ %>
+                        <li>
+                            <%= row.name %>
+                                <div>
+                                    <%= row.description %>
+                                </div>
+                                <img src="<%= row.image_url %>" alt="" style="width: 100px;">
+                        </li>
+                        <% }) %>
+                </ul>
+                <% } %>
+                    <% if (category.category_id===3) { %>
+                        <h1>Kid's Products</h1>
+                        <ul>
+                            <% data.forEach((row)=>{ %>
+                                <li>
+                                    <%= row.name %>
+                                        <div>
+                                            <%= row.description %>
+                                        </div>
+                                        <img src="<%= row.image_url %>" alt="" style="width: 100px;">
+                                </li>
+                                <% }) %>
+                        </ul>
+                        <% } %>
 </body>
+
 </html>

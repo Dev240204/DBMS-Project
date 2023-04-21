@@ -120,45 +120,45 @@ use clothstore;
 -- ('Kids'' Sneakers', 24.99, 3, 'Durable and comfortable sneakers for kids', 'New Balance', '10', 'Grey/Pink');
 -- select * from products;
 
---  insert into image(id, product_id, url) values
---  (1, 1, "https://unsplash.com/photos/KrHNHoRLwmw"),
---  (2, 2, "https://unsplash.com/photos/f67Caxg3akg"),
---  (3, 3, "https://unsplash.com/photos/ZCoqcrWp9GY"),
---  (4, 4, "https://unsplash.com/photos/0QDEj5dnUMk"),
---  (5, 5, "https://unsplash.com/photos/SD9Jyl1xNQ4"),
---  (6, 6, "https://unsplash.com/photos/TPC-Tx8dcNE"),
---  (7, 7, "https://unsplash.com/photos/XG-fPA4Nu6k"),
---  (8, 8, "https://unsplash.com/photos/na8l3EPqpvY"),
---  (9, 9, "https://unsplash.com/photos/4rnfKwSNpx0"),
---  (10, 10, "https://unsplash.com/photos/cMB3D5Ox5KE"),
---  (11, 11, "https://unsplash.com/photos/Ue5kuMVmIhU"),
---  (12, 12, "https://unsplash.com/photos/5pmpSRctZb0"),
---  (13, 13, "https://unsplash.com/photos/2s3GhhJz2uY"),
---  (14, 14, "https://unsplash.com/photos/ah3jM7nRh1Y"),
---  (15, 15, "https://unsplash.com/photos/lVCHfXn3VME"),
---  (16, 16, "https://unsplash.com/photos/KUK-Z5aHjbg"),
---  (17, 17, "https://unsplash.com/photos/ld8Thc2ryuQ"),
---  (18, 18, "https://unsplash.com/photos/Z1JgfuSQ80s"),
---  (19, 19, "https://unsplash.com/photos/JZ51o_-UOY8"),
---  (20, 20, "https://unsplash.com/photos/gGdV5gn1eYc"),
---  (21, 21, "https://unsplash.com/photos/7km_eNGl_qA"),
---  (22, 22, "https://unsplash.com/photos/Fg15LdqpWrs"),
---  (23, 23, "https://unsplash.com/photos/48-R71Sd_d8"),
---  (24, 24, "https://unsplash.com/photos/umfpFoKxIVg"),
---  (25, 25, "https://unsplash.com/photos/AmORQArz3Ds"),
---  (26, 26, "https://unsplash.com/photos/YHbcum51JB0"),
---  (27, 27, "https://unsplash.com/photos/cMB3D5Ox5KE"),
---  (28, 28, "https://unsplash.com/photos/2s3GhhJz2uY"),
---  (29, 29, "https://unsplash.com/photos/cCKmXQT_lvI"),
---  (30, 30, "https://unsplash.com/photos/m6mAYVEHlNs"),
---  (31, 31, "https://unsplash.com/photos/zYEXRpfJfII"),
---  (32, 32, "https://unsplash.com/photos/GOR2kYIPT6E"),
---  (33, 33, "https://unsplash.com/photos/35yy-0cwIMw"),
---  (34, 34, "https://unsplash.com/photos/W82dYwtQrTk"),
---  (35, 35, "https://unsplash.com/photos/DWXoedwYhl0"),
---  (36, 36, "https://unsplash.com/photos/R3mCPKxN_wo"),
---  (37, 37, "https://unsplash.com/photos/Z1JgfuSQ80s");
---  select * from image;
+-- insert into image(id, product_id, url) values
+--  (1, 1, "https://images.unsplash.com/photo-1516082669438-2d2bb5082626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"),
+--  (2, 2, "https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (3, 3, "https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (4, 4, "https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"),
+--  (5, 5, "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"),
+--  (6, 6, "https://images.unsplash.com/photo-1611937674427-01cd37d36732?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+--  (7, 7, "https://images.unsplash.com/photo-1516540896870-2aed89d0288f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+--  (8, 8, "https://images.unsplash.com/photo-1531190260877-c8d11eb5afaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+--  (9, 9, "https://images.unsplash.com/photo-1598979311332-db0fe21de9b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"),
+--  (10, 10, "https://images.unsplash.com/photo-1568732939097-b949d8c03cc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),		-- 10
+--  (11, 11, "https://images.unsplash.com/photo-1524414621493-7dec026782c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+--  (12, 12, "https://images.unsplash.com/photo-1582142306909-195724d33ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
+--  (13, 13, "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (14, 14, "https://plus.unsplash.com/premium_photo-1670574914665-11abc1026342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (15, 15, "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"),
+--  (16, 16, "https://images.unsplash.com/photo-1525107372716-1a85946c5dff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (17, 17, "https://images.unsplash.com/photo-1631044237696-6b38064fbbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (18, 18, "https://images.unsplash.com/photo-1503449377594-32dd9ac4467c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"),
+--  (19, 19, "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (20, 20, "https://images.unsplash.com/photo-1631034527645-9c3a92b73abd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"),		-- 20
+--  (21, 21, "https://images.unsplash.com/photo-1617951907145-53f6eb87a3a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"),
+--  (22, 22, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80"),
+--  (23, 23, "https://images.unsplash.com/photo-1635439714465-3ed3e6a122e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=349&q=80"),
+--  (24, 24, "https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (25, 25, "https://images.unsplash.com/photo-1603239701868-104cab0836c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),		-- 25
+--  (26, 26, "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
+--  (27, 27, "https://images.unsplash.com/photo-1568732939097-b949d8c03cc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (28, 28, "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (29, 29, "https://images.unsplash.com/photo-1591950845424-4d3ef17c72d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"),
+--  (30, 30, "https://images.unsplash.com/photo-1601924638867-3a6de6b7a500?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),		-- 30
+--  (31, 31, "https://images.unsplash.com/photo-1511822610278-4656f22cdd46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
+--  (32, 32, "https://images.unsplash.com/photo-1564463836192-7ca5d09c8e92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"),
+--  (33, 33, "https://images.unsplash.com/photo-1667610508662-08ac0deec289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (34, 34, "https://images.unsplash.com/photo-1490168040734-2226e72962f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"),
+--  (35, 35, "https://images.unsplash.com/photo-1649318096763-3a2e7eeff2ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),		-- 35
+--  (36, 36, "https://images.unsplash.com/photo-1603923407783-40720d64d4b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+--  (37, 37, "https://images.unsplash.com/photo-1503449377594-32dd9ac4467c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");		-- 37
+-- select * from image;
 
 # Joined Image and Product Table and inserted the url data in product table
 -- UPDATE products p
