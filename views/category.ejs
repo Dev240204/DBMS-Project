@@ -39,6 +39,10 @@
             display: inline-block;
             margin-left: 20px;
         }
+
+        .card-text {
+            padding: 0 0 10px 0;
+        }
     </style>
 
     <!-- Heading -->
@@ -66,19 +70,19 @@
                                 <h3>
                                     <%= data[0].name %>
                                 </h3>
-                                < class="card-text">
+                                <div class="card-text">
                                     <%= data[0].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[0].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[0].size %>
-                                            </small>
-                                        </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[0].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[0].size %>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,371 +93,10 @@
                                 <h3>
                                     <%= data[1].name %>
                                 </h3>
-                                < class="card-text">
+                                <div class="card-text">
                                     <%= data[1].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[1].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[1].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[2].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[2].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[2].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[2].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[2].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[3].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[3].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[3].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[3].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[3].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[4].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[4].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[4].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[4].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[4].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[5].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[5].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[5].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[5].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[5].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[6].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[6].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[6].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[6].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[6].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[7].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[7].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[7].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <h5>
-                                                    $<%= data[7].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[7].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[8].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[8].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[8].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[8].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[8].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[9].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[9].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[9].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[9].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[9].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[10].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[10].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[10].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[10].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[10].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[11].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[11].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[11].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[11].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[11].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[12].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[12].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[12].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[12].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[12].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[13].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[13].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[13].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[13].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[13].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="<%= data[14].image_url %>" alt="">
-                            <div class="card-body">
-                                <h3>
-                                    <%= data[14].name %>
-                                </h3>
-                                < class="card-text">
-                                    <%= data[14].description %>
-
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-
-                                                <h5>
-                                                    $<%= data[14].price %>
-                                                </h5>
-                                            </div>
-                                            <small class="text-body-secondary">
-                                                size : <%= data[14].size %>
-                                            </small>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <% } %>
-            <% if (category.category_id===2) { %>
-                <div class="album py-5 bg-body-tertiary ">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <img src="<%= data[0].image_url %>" alt="">
-                                    <div class="card-body">
-                                        <h3>
-                                            <%= data[0].name %>
-                                        </h3>
-                                        < class="card-text">
-                                            <%= data[0].description %>
-                                        </ <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <h5>
-                                                $<%= data[0].price %>
-                                            </h5>
-                                        </div>
-                                        <small class="text-body-secondary">
-                                            size : <%= data[0].size %>
-                                        </small>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="<%= data[1].image_url %>" alt="">
-                                <div class="card-body">
-                                    <h3>
-                                        <%= data[1].name %>
-                                    </h3>
-                                    < class="card-text">
-                                        <%= data[1].description %>
-                                    </ <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <h5>
                                             $<%= data[1].price %>
@@ -473,227 +116,588 @@
                                 <h3>
                                     <%= data[2].name %>
                                 </h3>
-                                < class="card-text">
+                                <div class="card-text">
                                     <%= data[2].description %>
-                                </ <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <h5>
-                                        $<%= data[2].price %>
-                                    </h5>
                                 </div>
-                                <small class="text-body-secondary">
-                                    size : <%= data[2].size %>
-                                </small>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[2].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[2].size %>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[3].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[3].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[3].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <h5>
-                                    $<%= data[3].price %>
-                                </h5>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[3].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[3].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[3].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[3].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[3].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[3].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[4].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[4].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[4].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <h5>
-                                    $<%= data[4].price %>
-                                </h5>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[4].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[4].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[4].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[4].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[4].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[4].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[5].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[5].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[5].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <h5>
-                                    $<%= data[5].price %>
-                                </h5>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[5].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[5].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[5].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[5].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[5].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[5].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
 
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[6].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[6].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[6].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <h5>
-                                    $<%= data[6].price %>
-                                </h5>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[6].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[6].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[6].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[6].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[6].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[6].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[7].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[7].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[7].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <h5>
-                                    $<%= data[7].price %>
-                                </h5>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[7].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[7].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[7].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <h5>
+                                            $<%= data[7].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[7].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[7].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[8].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[8].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[8].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[8].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[8].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[8].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
 
-                                <h5>
-                                    $<%= data[8].price %>
-                                </h5>
+                                        <h5>
+                                            $<%= data[8].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[8].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[8].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[9].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[9].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[9].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[9].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[9].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[9].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
 
-                                <h5>
-                                    $<%= data[9].price %>
-                                </h5>
+                                        <h5>
+                                            $<%= data[9].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[9].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[9].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[10].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[10].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[10].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[10].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[10].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[10].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
 
-                                <h5>
-                                    $<%= data[10].price %>
-                                </h5>
+                                        <h5>
+                                            $<%= data[10].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[10].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[10].size %>
-                            </small>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="<%= data[11].image_url %>" alt="">
-                        <div class="card-body">
-                            <h3>
-                                <%= data[11].name %>
-                            </h3>
-                            < class="card-text">
-                                <%= data[11].description %>
-                            </ <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[11].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[11].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[11].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
 
-                                <h5>
-                                    $<%= data[11].price %>
-                                </h5>
+                                        <h5>
+                                            $<%= data[11].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[11].size %>
+                                    </small>
+                                </div>
                             </div>
-                            <small class="text-body-secondary">
-                                size : <%= data[11].size %>
-                            </small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[12].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[12].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[12].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                        <h5>
+                                            $<%= data[12].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[12].size %>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[13].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[13].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[13].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                        <h5>
+                                            $<%= data[13].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[13].size %>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="<%= data[14].image_url %>" alt="">
+                            <div class="card-body">
+                                <h3>
+                                    <%= data[14].name %>
+                                </h3>
+                                <div class="card-text">
+                                    <%= data[14].description %>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+
+                                        <h5>
+                                            $<%= data[14].price %>
+                                        </h5>
+                                    </div>
+                                    <small class="text-body-secondary">
+                                        size : <%= data[14].size %>
+                                    </small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
-                </div>
+            </div>
+        </div>
+        </div>
+        <% } %>
+            <% if (category.category_id===2) { %>
+                <div class="album py-5 bg-body-tertiary ">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[0].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[0].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[0].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[0].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[0].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[1].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[1].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[1].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[1].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[1].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[2].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[2].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[2].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[2].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[2].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[3].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[3].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[3].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[3].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[3].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[4].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[4].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[4].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[4].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[4].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[5].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[5].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[5].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[5].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[5].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[6].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[6].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[6].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[6].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[6].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[7].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[7].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[7].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <h5>
+                                                        $<%= data[7].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[7].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[8].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[8].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[8].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+
+                                                    <h5>
+                                                        $<%= data[8].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[8].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[9].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[9].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[9].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+
+                                                    <h5>
+                                                        $<%= data[9].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[9].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[10].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[10].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[10].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+
+                                                    <h5>
+                                                        $<%= data[10].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[10].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="<%= data[11].image_url %>" alt="">
+                                    <div class="card-body">
+                                        <h3>
+                                            <%= data[11].name %>
+                                        </h3>
+                                        <div class="card-text">
+                                            <%= data[11].description %>
+                                                </ <div </div>class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+
+                                                    <h5>
+                                                        $<%= data[11].price %>
+                                                    </h5>
+                                                </div>
+                                                <small class="text-body-secondary">
+                                                    size : <%= data[11].size %>
+                                                </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 </div>
                 <% } %>
