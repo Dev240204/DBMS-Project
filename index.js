@@ -9,6 +9,8 @@ app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (req, res) => {
     const sql = `select * from products`;
     con.query(sql,(err,result)=>{
@@ -53,14 +55,6 @@ app.get("/kids",(req,res)=>{
     con.query(sql, (err, result) => {
         if (err) throw err;
         res.render("category",{data : result,category});
-    })
-})
-app.get("/product/:id",(req,res)=>{
-    const {id} = req.params
-    const sql = `select * from products`
-    con.query(sql,(err,result)=>{
-        if(err) throw err;
-        res.render("product",{result})
     })
 })
 app.listen(3000, () => {
